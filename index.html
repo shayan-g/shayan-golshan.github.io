@@ -1,0 +1,538 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<link rel="icon" href="images/favicon.png" type="image/x-icon" />
+		<title>Shayan Golshan's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">Projects</a></li>
+							<li><a href="#two">Resume & Qualifications</a></li>
+							<li><a href="#three">Education</a></li>
+							<li><a href="#four">Contact Me</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+				<section id="intro" class="wrapper style4 fullscreen fade-up">
+					<div class="inner">
+						<span class="image main" style="max-width:200px; float: right; margin: 0 0 1.5em 1.5em;">
+							<img src="images/shayan.jpg" alt="Shayan Golshan's Profile Picture" style="width:100%; height:auto; display:block; border-radius:4px;" />
+						</span>
+						<h1>Shayan Golshan</h1>
+						<p style="margin-bottom: 0.1em;"><strong>Data Analytics Professional</strong></p>
+						<p style="margin-top: 0;"><em>Transforming data into actionable insights to drive smarter business decisions.</em></p>
+
+						<p style="text-indent: 3em;">
+							Hello and welcome to my portfolio! I hold a Master’s in Business Analytics from California Polytechnic State University, San Luis Obispo, with a focus in Data Analytics, Data Science, and Data Visualization.
+						</p>
+
+						<p>
+							My experience spans the full data analytics pipeline—from data ingestion and web scraping to cleansing, visualization, and predictive modeling. I use these skills to translate complex datasets into clear, actionable insights, paired with visual storytelling using Tableau and Python.
+						</p>
+
+						<!-- <p>
+							Passionate about continuous improvement, I apply Lean Six Sigma principles and project management skills to enhance cross-functional communication and deliver efficient, data-driven strategies.
+						</p> -->
+
+						<p>
+							I’m a proactive problem solver with proficiency in Python, R, and SQL.
+						</p>
+
+						<ul class="actions">
+							<li><a href="#one" class="button scrolly">Learn more</a></li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style4 spotlights compact-section">
+						<!--
+							This section has been refactored to introduce a filterable project grid with
+							compact styling. The original three spotlight subsections have been replaced
+							with a responsive grid layout that supports at least three projects per row.
+							A set of pill‑shaped filter buttons allows visitors to quickly filter
+							projects by category. Custom styles and a small script are scoped to this
+							section so they don't affect the rest of the site.
+						-->
+						<style>
+							/* Compact section: reduce vertical padding compared to default .spotlights */
+							#one.compact-section {
+								padding: 2em 0;
+							}
+
+							/* Filter navigation styling */
+							#one .filter-nav {
+								text-align: center;
+								margin: 1.5rem 0;
+							}
+							#one .filter-nav button {
+								padding: 0rem 1.0rem;
+								margin: 0.5rem;
+								border: .5px solid rgba(255, 255, 255, 0.3);
+								border-radius: 25px;
+								background: rgba(255, 255, 255, 0.05);
+								color: inherit;
+								font-size: 0.9rem;
+								cursor: pointer;
+								transition: transform 0.2s ease, background-color 0.3s ease;
+								min-width: 5rem;
+								height: 3rem;
+								line-height: 3rem;        /* vertically centers the text */
+    							text-align: center;       /* horizontally centers the text */
+							}
+
+							#one .filter-nav button:hover {
+								transform: translateY(-3px);
+								background: rgba(255, 255, 255, 0.1);
+							}
+							#one .filter-nav button.active {
+								background: rgba(255, 255, 255, 0.2);
+							}
+
+							/* Projects grid styling */
+							#one .projects-grid {
+								display: flex;
+								flex-wrap: wrap;
+								justify-content: space-between;
+							}
+							#one .projects-grid .project-item {
+								width: calc(33.333% - 1rem);
+								margin-bottom: 2rem;
+								background: rgba(255, 255, 255, 0.05);
+								border-radius: 4px;
+								overflow: hidden;
+								display: flex;
+								flex-direction: column;
+							}
+							#one .projects-grid .project-item .image img {
+								width: 100%;
+								height: auto;
+								display: block;
+							}
+							#one .projects-grid .project-item .content {
+								padding: 1rem;
+								flex: 1 0 auto;
+								text-align: center;
+							}
+							#one .projects-grid .project-item .content h3 {
+								font-size: 1.9rem;
+								margin-bottom: 0.5rem;
+							}
+							#one .projects-grid .project-item .content p {
+								font-size: 1.1rem;
+								line-height: 1.4;
+								margin-bottom: 1rem;
+							}
+							/* Responsive breakpoints */
+							@media screen and (max-width: 980px) {
+								#one .projects-grid .project-item {
+									width: calc(50% - 1rem);
+								}
+							}
+							@media screen and (max-width: 736px) {
+								#one .projects-grid .project-item {
+									width: 100%;
+								}
+							}
+						</style>
+
+						<div class="inner">
+							<!-- Filter buttons -->
+							<nav class="filter-nav">
+								<button class="active" data-filter="all">All</button>
+								<button data-filter="tableau">Tableau</button>
+								<button data-filter="sql">SQL</button>
+								<button data-filter="python">Python</button>
+								<button data-filter="r">R</button>
+							</nav>
+							<!-- Projects grid -->
+							<div class="projects-grid">
+								<article class="project-item python">
+									<a href="https://github.com/shayan-g/CNN-Brain-Tumor-Classifier" class="image" target="_blank" rel="noopener">
+										<img src="images/cnn.jpg" alt="CNN-Brain-Tumor-Classifier" data-position="center center" /></a>
+									<div class="content">
+										<h3>CNN Brain Tumor Classifier</h3>
+										<p>Convolutional neural network (CNN) built with Keras for binary classification of brain MRI images.</p>
+									</div>
+								</article>
+								<article class="project-item python">
+									<a href="https://github.com/shayan-g/ACS-and-Congressional-Data-Analysis" class="image" target="_blank" rel="noopener">
+										<img src="images/american_community_survey.png" alt="ACS-and-Congressional-Data-Analysis" data-position="top center" /></a>
+									<div class="content">
+										<h3>ACS and Congressional Data Analysis</h3>
+										<p>A Jupyter-Notebook investigation of how education and political-party affiliation relate to very-high household income in U.S. Congressional districts (ACS 2021).</p>
+									</div>
+								</article>
+								<article class="project-item sql">
+									<a href="https://github.com/shayan-g/SLO-Watersport-SQL-Database" class="image" target="_blank" rel="noopener">
+										<img src="images/watersport.png" alt="SLO-Watersport-SQL-Database" data-position="25% 25%" /></a>
+									<div class="content">
+										<h3>SLO Watersport SQL Database</h3>
+										<p>A sample SQL database schema for a fictional company—complete with DDL script, updates, and sample queries for business questions.</p>
+									</div>
+								</article>
+								<article class="project-item python">
+									<a href="https://github.com/shayan-g/Chipotle-Marketing-Data-Analysis" class="image" target="_blank" rel="noopener">
+										<img src="images/chipotle.png" alt="Chipotle-Marketing-Data-Analysis" data-position="center center" /></a>
+									<div class="content">
+										<h3>Chipotle Marketing Data Analysis</h3>
+										<p>K-Means clustering to analysis to inform marketing, menu planning, and customer experience from survey data</p>
+									</div>
+								</article>
+								<article class="project-item r">
+									<a href="https://github.com/shayan-g/Webscraping-US-Fast-Food-Chains" class="image" target="_blank" rel="noopener">
+										<img src="images/fastfood.jpg" alt="Webscraping-US-Fast-Food-Chains" data-position="top center" /></a>
+									<div class="content">
+										<h3>Webscraping US Fast Food-Chains</h3>
+										<p>The analysis combines web-scraped store location data with U.S. Census population data and stock market information to try and draw comparisons with one another.</p>
+									</div>
+								</article>
+								</article>
+								<article class="project-item python">
+									<a href="https://github.com/shayan-g/NYC-Homicide-Data-Analysis" class="image" target="_blank" rel="noopener">
+										<img src="images/nypd.png" alt="NYC-Homicide-Data-Analysis" data-position="center center" /></a>
+									<div class="content">
+										<h3>NYC Homicide Data Analysis</h3>
+										<p>New York City police department crime response analysis.</p>
+									</div>
+								</article>
+								<article class="project-item tableau">
+									<a href="https://public.tableau.com/app/profile/shayan.g/viz/SalesDashboard_17558147289120/SalesDashboard" class="image" target="_blank" rel="noopener">
+										<img src="images/saleskpi.png" alt="Tableau Sales Dashboard" data-position="center center" /></a>
+									<div class="content">
+										<h3>Sales KPIs Dashboard</h3>
+										<p>Interactive dashboard for visualizing KPIs for business across all stores within the United States.  This dashboard identifies key markets such has New York and California.</p>
+									</div>
+								</article>
+							</div>
+						</div>
+
+						<script>
+							// Project filtering logic scoped to this section
+							(function () {
+								const filterNav = document.querySelector('#one .filter-nav');
+								const buttons = filterNav.querySelectorAll('button');
+								const items = document.querySelectorAll('#one .project-item');
+								buttons.forEach((btn) => {
+									btn.addEventListener('click', () => {
+										// Activate selected button
+										buttons.forEach((b) => b.classList.remove('active'));
+										btn.classList.add('active');
+										const filter = btn.getAttribute('data-filter');
+										// Show/hide projects based on filter
+										items.forEach((item) => {
+											if (filter === 'all' || item.classList.contains(filter)) {
+												item.style.display = '';
+											} else {
+												item.style.display = 'none';
+											}
+										});
+									});
+								});
+							})();
+						</script>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style4 fade-up">
+						<div class="inner">
+							<h2>Work Experience</h2>
+							<p style="text-indent: 3em;">I have experience working in various Python libraries (NumPy, Pandas, Transformers, TensorFlow, Matplotlib, Keras, Scikit-Learn, Selenium, etc.), R, and SQL for building and automating ETL pipelines, scripting, data scraping and mining datasets, and deploying machine learning models to help solve buisness problems.</p>
+							<p style="text-indent: 3em;">Proficient in designing interactive dashboards and visualizations with Tableau and Python (Ploty, Seaborn, Matplotlib, Streamlit) to translate complex analyses into clear, strategical insights for top management.  I have a solid background in database adminstration with exposure to OBIEE, MySQL, Oracle APEX, and AWS Cloud services (S3).</p>
+							<div class="features">
+								<section>
+									<img
+										src="images/stanford-logo.jpg"
+										alt="Stanford Logo"
+										style="
+										position: absolute;
+										left: 2em;
+										top: 2em;
+										width: 3.5em;
+										height: 3.5em;
+										border-radius: 50%;
+										background: #FFFFFF;
+										padding: 0.5em;
+										box-sizing: content-box;
+										"
+									/>
+									<h3>Stanford University</h3>
+									<p class="subtext"><b>Data Analyst, Marketing & Digital Strategy</b> | Palo Alto, CA | October 2023 - Present</p><ul>
+									<li>Built and validated data pipelines with Python scripts for marketing outreach in mail and email soliciations across 9 university annual giving funds</li>
+									<li>Developed and deployed machine learning model pipeline for sentiment analysis of email data to understand donor engagement and strategy moving forward</li>
+									<li>Designed and implemented interactive dashboards using OBIEE, Tableau to visualize donor data, campaign performance, and engagement metrics</li>
+									<li>Utilized the Lean Six Sigma DMAIC (Define, Measure, Analyze, Improve, Control) process for the Data team's current operations in order to make them more efficient and reproducable across all team members</li>
+									<li>Collaborated with cross-functional teams to identify data-driven strategies for improving donor engagement and retention</li>
+									<li>Streamlined our GitHub repository and migrated team from Windows to MacOS, redesigning data architectuyre for data processing as well as data extaction servies</li>
+								</section>
+								<section>
+									<img
+										src="images/netflix-logo.jpg"
+										alt="Netflix Logo"
+										style="
+										position: absolute;
+										left: 2em;
+										top: 2em;
+										width: 3.5em;
+										height: 3.5em;
+										border-radius: 50%;
+										background: #FFFFFF;
+										padding: 0.5em;
+										box-sizing: content-box;
+										"
+									/>
+									<h3>Netflix</h3>
+									<p class="subtext"><b>Data Scientist (Cal Poly SLO MSBA Industry Collaboration)</b> | Los Gatos, CA | April 2023 - June 2023</p><ul>
+									<li>Using analytics to sharpen Netflix's marketing edge for exploring opportunities/strategies within the gaming industry</li>
+									<li>Conducted market analysis of mobile gaming market via GooglePlay Store to identify game genres likely to resonate with Netflix users</li>
+									<li>Conducted sentiment analysis of GooglePlay Store reviews to drive strategy for Netflix's pricing models</li>
+									<li>Evaluated various pricing models, considering their economic feasibility and trade-offs</li>
+									<li>Developed predictive model for user segmentation, distinguishing potential gamers from non-gamers</li>
+								</section>
+								<section>
+									<img
+										src="images/salesforce-logo.png"
+										alt="Salesforce Logo"
+										style="
+										position: absolute;
+										left: 2em;
+										top: 2em;
+										width: 3.5em;
+										height: 3.5em;
+										border-radius: 50%;
+										background: #FFFFFF;
+										padding: 0.5em;
+										box-sizing: content-box;
+										"
+									/>
+									<h3>Salesforce Inc.</h3>
+									<p class="subtext"><b>Data Scientist (Cal Poly SLO MSBA Industry Collaboration)</b> | San Francisco, CA | January 2023 - March 2023</p><ul>
+									<li>Developed cost metrics to optimize expense generation through analysis of travel data gathered through scraping logistical information including but not limited to, Uber price data, Google Flights API for airfares, Airport codes, gas prices, hotel prices, etc. all within the United States of America</li>
+									<li>Created and implemented remote employee metrics for business operations & people analytics (travel times, total cost of in person meetings, most efficient meeting hub)</li>
+									<li>Conducted travel cost analysis for hybrid workplace environment</li>
+									<li>Performed data scraping in public domains or using REST APIs, cleaning those datasets, and dataset creation to draw insights for management teams in the analytics processes</li>
+									<li>Designed an interactive Tableau dashboard was created for the People Analytics team to get the cost estimate figures and on-demand travel difficulty metrics for any list of employees, enhancing efficiency and cost effectiveness of employee travel/meetings for Salesforce</li>
+								</section>
+								<section>
+									<img
+										src="images/gato365-logo.png"
+										alt="GATO365 Logo"
+										style="
+										position: absolute;
+										left: 2em;
+										top: 2em;
+										width: 3.5em;
+										height: 3.5em;
+										border-radius: 50%;
+										background: #FFFFFF;
+										padding: 0.5em;
+										box-sizing: content-box;
+										"
+									/>
+									<h3>GATO365</h3>
+									<p class="subtext"><b>Product Manager</b> | San Luis Obispo, CA | August 2022 - March 2023</p><ul>
+									<li>Managed database and validated data for product release</li>
+									<li>Developed standard operating procedures for related business processes</li>
+									<li>Ensured high-quality deliverables for clients through validation and enhancements prior to deployment</li>
+								</section>
+								<section>
+									<img
+										src="images/samsungsemi-logo.jpg"
+										alt="Samsung Semiconductor Logo"
+										style="
+										position: absolute;
+										left: 2em;
+										top: 2em;
+										width: 3.5em;
+										height: 3.5em;
+										border-radius: 50%;
+										background: #FFFFFF;
+										padding: 0.5em;
+										box-sizing: content-box;
+										"
+									/>
+									<h3>Samsung Semiconductor (SSI) - Device Solutions America Foundry</h3>
+									<p class="subtext"><b>Business Process Intern</b> | San Jose, CA | June 2021 - September 2021</p><ul>
+									<li>Analyzed all existing processes, creating Business Process Flow Diagrams, and identified opportunities for advancement</li>
+									<li>Created and maintained DSA Operations Task Directory, DSA Operations Process Map and matched to DSA Sales Salesforce Stage process (RFQ, Design In/Win/Award, Tape Out)</li>
+									<li>Evaluated Samsung Foundry's business processes and IT collaboration tools, recommending short- and long-term improvements to support scalable growth</li>
+									<li>Developed all Samsung Foundry process flows and gave a blueprint for new hires to follow when onboarding</li>
+								</section>
+								<section>
+									<img
+										src="images/vintageauto-logo.jpg"
+										alt="Vintage Auto Logo"
+										style="
+										position: absolute;
+										left: 2em;
+										top: 2em;
+										width: 3.5em;
+										height: 3.5em;
+										border-radius: 50%;
+										background: #FFFFFF;
+										padding: 0.5em;
+										box-sizing: content-box;
+										"
+									/>
+									<h3>Vintage Auto</h3>
+									<p class="subtext"><b>Business Data Analyst</b> | San Luis Obispo, CA | September 2020 - December 2020</p><ul>
+									<li>Worked with management to implement a database system to manage costs</li>
+									<li>Developed a robust relational database system to support business process improvements</li>
+									<li>Used Oracle APEX to create and execute SQL queries that contain business intelligence</li>
+									<li>Produced reports and data models to help guide operational enhancements</li>
+								</section>
+							</div>
+							<!-- <ul class="actions">
+								<li><a href="generic.html" class="button">Learn more</a></li>
+							</ul> -->
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style4 fade-up">
+						<div class="inner">
+							<h2>Education</h2>
+							<div class="features">
+								<section>
+									  <img
+										src="images/calpoly-logo.png"
+										alt="Cal Poly SLO Logo"
+										style="
+										position: absolute;
+										left: 2em;
+										top: 2em;
+										width: 3.5em;
+										height: 3.5em;
+										border-radius: 50%;
+										background: #F8E08E;
+										padding: 0.5em;
+										box-sizing: content-box;
+										"
+									/>
+									<h3>California Polytechnic State University - San Luis Obispo</h3>
+									<p class="subtext"><b>M.S. Business Analytics</b> | San Luis Obispo, CA | August 2022 - June 2023</p><ul>
+									<li>GPA: 3.707</li>
+									<li>V.P. of Outreach for Cal Poly MSBA Roundtables Advisory Board</li>
+								</section>
+								<section>
+									  <img
+										src="images/calpoly-logo.png"
+										alt="Cal Poly SLO Logo"
+										style="
+										position: absolute;
+										left: 2em;
+										top: 2em;
+										width: 3.5em;
+										height: 3.5em;
+										border-radius: 50%;
+										background: #F8E08E;
+										padding: 0.5em;
+										box-sizing: content-box;
+										"
+									/>
+									<h3>California Polytechnic State University - San Luis Obispo</h3>
+									<p class="subtext"><b>B.S. Business Administration - Information Systems</b> | San Luis Obispo, CA | September 2018 - June 2022</p><ul>
+									<li>GPA: 3.571, Cum Laude</li>
+									<li>Information Systems Association (ISA) Member</li>
+									<li>Week of Welcome (W.O.W.) Orientation Volunteer</li>
+								</section>
+							</div>
+							<!-- <ul class="actions">
+								<li><a href="generic.html" class="button">Learn more</a></li>
+							</ul> -->
+						</div>
+					</section>
+
+				<!-- Four -->
+					<section id="four" class="wrapper style4 fade-up">
+						<div class="inner">
+							<h2>Get in touch with me!</h2>
+							<p>I’d love to explore how my background in data analytics can help drive your organization forward with strategic insights. Please feel free to reach out by email or by phone listed in the section below. I look forward to connecting with you!</p>
+							<!-- <div class="split style4">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section> -->
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Email</h3>
+											<a href="#">sgolshan2018@gmail.com</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(408) 621-0449</span>
+										</li>
+										<li>
+											<h3>Relevant Profiles</h3>
+											<ul class="icons">
+												<li><a href="https://github.com/shayan-g" class="icon brands fa-github fa-5x" target = "_blank" rel="noopener"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.linkedin.com/in/shayan-golshan/" class="icon brands fa-linkedin-in fa-5x" target = "_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style4-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
